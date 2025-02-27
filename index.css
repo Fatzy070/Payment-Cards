@@ -1,0 +1,114 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin-top: 20px;
+    padding:0 15px;
+    background-color: #2B2B2B;
+    color: white;
+}
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.person{
+    padding-left: 30px;
+}
+.person h3 {
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.person h1 {
+    padding-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.person p {
+    width: 420px;
+    font-size: 1.1rem;
+}
+.basic {
+    margin-top:10px ;
+    border: 2px;
+    padding: 15px 25px;
+    height: 300px;
+    background-color: #2E2D3B;
+    border-radius: 10px ;
+}
+.basic h2 {
+    
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    padding-top: 20px;
+}
+.basic span {
+    font-size: 2.5rem ;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.yellow {
+    color: orange;
+}
+.red {
+    color: red ;
+}
+.basic p {
+    color: rgb(177, 174, 174);
+    width: 300px;
+    border: 2px
+}
+
+.per {
+    padding-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn {
+    margin-top: 10px;
+    border: 2px solid white;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    place-content: center;
+}
+.btn button {
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #fff;
+}
+#btn {
+    background-color: red;
+    border: none;
+}
+@media (max-width: 600px) {
+    section {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    .person p {
+        width: 420px;
+        font-size: 1.3rem;
+    }
+    
+}
+@media (min-width: 601px) and (max-width: 768px) {
+    section {
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    }
+    .person p {
+        width: 420px;
+        font-size: 1.3rem;
+    }
+    
+}
+@media (min-width: 769px) and (max-width: 1100px) {
+    .person p {
+        width: 420px;
+        font-size: 1.3rem;
+    }
+    
+}
